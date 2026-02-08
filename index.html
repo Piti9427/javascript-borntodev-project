@@ -19,9 +19,19 @@
     <!-- <h1 id="result"></h1>
     <p>เลขที่สุ่มได้ : <span id="lotter_number"></span></p> -->
 
-    <h3>โปรแกรมคำนวณสินค้า</h3>
+    <!-- <h3>โปรแกรมคำนวณสินค้า</h3>
     <h1 id="result"></h1>
-    <div id="price-list"></div>
+    <div id="price-list"></div> -->
+    <h3>โปรแกรมแปลงหน่วยจากฟาเรนไฮต์เป็นเซลเซียส</h3>
+    <p>อุณหภูมิในหน่วยฟาเรนไฮต์ : <input type="number" id="fahrenheit_input"></p>
+    <button onclick="ToCelcius()">แปลง</button>
+    <p>อุณหภูมิในหน่วยเซลเซียส : <span id="answer_section_celcius"></span></p>
+    
+
+    <h3>โปรแกรมแปลงหน่วยจากเซลเซียสเป็นฟาเรนไฮต์</h3>
+    <p>อุณหภูมิในหน่วยเซลเซียส : <input type="number" id="celcius_input"></p>
+    <button onclick="ToFahrenheit()">แปลง</button>
+    <p>อุณหภูมิในหน่วยฟาเรนไฮต์ : <span id="answer_section_fahrenheit"></span></p>
 </body>
     <script src="app.js"></script>
 </html>
