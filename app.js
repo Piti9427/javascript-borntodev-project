@@ -38,9 +38,21 @@
 // console.log("Exit")
 
 
-let qrt = prompt("จำนวนสินค้า")
-for(let i = 1; i <= qrt; i++){
-    let item_price = prompt("ราคาสินค้าชิ้นที่" + i)
-    document.getElementById("price-list").innerHTML += "รายการสินค้าชิ้นที่ " + i + ":" + item_price + "บาท"
+// let qrt = prompt("จำนวนสินค้า")
+// for(let i = 1; i <= qrt; i++){
+//     let item_price = prompt("ราคาสินค้าชิ้นที่" + i)
+//     document.getElementById("price-list").innerHTML += "รายการสินค้าชิ้นที่ " + i + ":" + item_price + "บาท"
 
+// }
+
+function ToCelcius(){
+    let fahrenheit = prompt("Fahrenheit:")
+    let value = (fahrenheit - 32) * 5/9;
+    document.getElementById("answer_section_celcius").innerHTML = value + "°C"
+}
+
+function ToFahrenheit(){
+    let celcius = prompt("Celcius:")
+    let value = (celcius * 9/5) + 32;
+    document.getElementById("answer_section_fahrenheit").innerHTML = value + "°F"
 }
